@@ -24,7 +24,7 @@ export PATH="/opt/gcc-arm-9.2-2019.12-x86_64-aarch64-none-linux-gnu/bin/:$PATH"
 
 #### AX620Q
 
-Please get it from [here](https://github.com/AXERA-TECH/ax620q_bsp_sdk/releases/download/v2.0.0/arm-AX620E-linux-uclibcgnueabihf_V3_20240320.tgz)
+Please get it from [here](https://github.com/AXERA-TECH/ax620e_bsp_sdk/releases/download/v2.0.0/arm-AX620E-linux-uclibcgnueabihf_V3_20240320.tgz)
 
 ```
 sudo tar -zxvf arm-AX620E-linux-uclibcgnueabihf_V3_20240320.tgz -C /opt/
@@ -34,8 +34,8 @@ export PATH="/opt/arm-AX620E-linux-uclibcgnueabihf/bin/:$PATH"
 ### prepare compile files
 
 ```
-git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git
-cd ax620q_bsp_sdk
+git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk.git
+cd ax620e_bsp_sdk
 ```
 
 Download the third-party zip file and decompress it into third-party dir
@@ -93,13 +93,13 @@ $ tree -L 2
 compile app demo
 ```
 cd app
-make p=AX630C_emmc_arm64_k419 isntall
+make p=AX630C_emmc_arm64_k419 install
 ```
 
 compile sample
 ```
 cd msp/sample
-make p=AX630C_emmc_arm64_k419 isntall
+make p=AX630C_emmc_arm64_k419 install
 ```
 
 the result 
